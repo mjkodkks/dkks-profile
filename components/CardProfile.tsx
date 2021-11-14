@@ -15,7 +15,6 @@ const CardProfile = () => {
     }
 
     const animate = ()=> {
-        console.log(cardProfileRef.current)
         // anime({
         //     targets: '.card-profile',
         //     translateX: 250,
@@ -24,15 +23,18 @@ const CardProfile = () => {
 
         var tl = anime.timeline({
         easing: 'easeOutExpo',
-        duration: 1000,
-        loop: true,
+        duration: 5000,
+        loop: false,
         });
 
         tl.add({
             targets: '.card-profile',
             keyframes: [
-                {translateY: -40},
-                {translateY: 0}
+                {
+                    translateY: 0,
+                    width: "42vw !important",
+                    height: "42vh !important"
+                },
               ],
         })
     }
@@ -45,7 +47,7 @@ const CardProfile = () => {
 
     return (
         <>
-            <div className="card-profile flex gap-8 rounded-xl border max-w-2xl p-8 bg-white"
+            <div className="card-profile md:flex-row flex-col flex gap-8 rounded-xl w-profileWidth h-profileHeight border p-8 bg-white"
             ref={cardProfileRef} >
                 <div className="img-warpper">
                     <img src={img} alt="img_profile"

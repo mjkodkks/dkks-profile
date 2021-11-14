@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import CardProfile from '../components/CardProfile'
+import Warpper from '../components/Warpper'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="h-full w-full">
+        <Warpper />
         <div className="w-full flex flex-col justify-center items-center gap-8">
           <div className="mt-8">
             <CardProfile />
