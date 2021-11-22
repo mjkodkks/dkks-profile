@@ -2,7 +2,6 @@ module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
-  important: true,
   theme: {
     extend: {
       width: {
@@ -13,7 +12,10 @@ module.exports = {
       },
       color: {
         primary: "#000",
-        background: "#101018"
+        background: "#101018",
+      },
+      textColor: {
+        txt: "#345"
       }
     },
   },

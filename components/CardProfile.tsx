@@ -54,16 +54,15 @@ const CardProfile = () => {
                     className="rounded-full" 
                     />
                 </div>
-                <div>
+                {/* <div>
                     <div className="text-lg">Hi i&apos;m <b>Thanonphat</b></div>
-                    <div className="mt-4">My name is Thanonphat Supho. I&apos;m Front-End Developer from thailand.
-                        I&apos;m a cat lover and enjoy to make something new.
+                    <div className="mt-4">My name is Thanonphat Supho..
                     </div>
                     <div className="flex gap-4 mt-4">
                         <img className="w-8 cursor-pointer" src="/github.png" alt="github" />
                         <img className="w-8 cursor-pointer" src="/linkedin.png" alt="linkedin" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

@@ -27,7 +27,7 @@ const ThemeSwitcher = () => {
 
     return (<>
         <label className="switch">
-            <input type="checkbox" onChange={switchChange} />
+            <input type="checkbox" onChange={switchChange} checked={theme === 'dark'} />
             <span className="slider round"></span>
         </label>
     </>)

@@ -68,11 +68,11 @@ a {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #24446e;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #24446e;
 }
 
 input:checked + .slider:before {
@@ -89,3 +89,34 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Fill button styling */
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  background-color: transparent !important;
+}
+
+.fill-behide {
+  background-color: #ffe54c !important;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(7px,7px);
+  transition: 0.2s;
+}
+
+.fill:hover + .fill-behide {
+  transform: translate(0,0);
+}
+/* End of Fill Button  */
